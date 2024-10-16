@@ -42,7 +42,7 @@ After running the script, various anomaly detection methods will be applied to t
 	•	Autoencoder
 	
 ### Results
-	(/result.png)
+	![Results](results.png)
 
 Each plot will display the data stream and highlight detected anomalies in red.
 
