@@ -32,7 +32,8 @@ Installing Requirements
 
 Note: If you are on Windows and your Python version is 3.x, you might need to use python instead of python3.
 
-Results
+Results  <img width="626" alt="Screenshot 2024-10-16 at 12 14 32 PM" src="https://github.com/user-attachments/assets/cbb6d9e3-b85c-40c0-86d1-e10224e6477f">
+
 
 After running the script, various anomaly detection methods will be applied to the data stream. The results will be visualized in separate plots for each algorithm:
 
