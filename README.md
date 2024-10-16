@@ -80,7 +80,7 @@ After running the script, various anomaly detection methods will be applied to t
 	•	Autoencoder
 	
 ### Results
-<img width="626" alt="Screenshot 2024-10-16 at 12 14 32 PM" src="https://github.com/user-attachments/assets/0e1a2868-e1e9-4256-8b55-9dbda976aa1f">
+<img width="1000" alt="Screenshot 2024-10-16 at 12 14 32 PM" src="https://github.com/user-attachments/assets/0e1a2868-e1e9-4256-8b55-9dbda976aa1f">
 
 
 Each plot will display the data stream and highlight detected anomalies in red.
