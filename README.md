@@ -2,46 +2,46 @@
 
 This project demonstrates various anomaly detection algorithms applied to a data stream. 
 # Anomaly Detection from Continuous Data Stream
-
-1.	Data Generation: The generate_data_stream function simulates a data stream with a trend, seasonality, and noise.
-
-2.	Anomaly Detection Algorithms:
-	1. Isolation Forest
-		• Implemented in detect_anomalies_isolation_forest.
-		• Description: An ensemble algorithm that isolates anomalies by creating decision trees.
-		• Effectiveness: Efficient and effective for large datasets, adapts to varying data distributions, and handles both categorical and continuous features well.
-	2. Z-Score
-		• Z-Score: Implemented in detect_anomalies_z_score.
-		• Description: A statistical method that measures how many standard deviations a data point is from the mean.
-		• Effectiveness: Simple and fast for identifying outliers in normally distributed data; may struggle with skewed distributions.
-	3. Exponential Smoothing
-		• Exponential Smoothing: Implemented in detect_anomalies_exponential_smoothing.
-		• Description: A forecasting method that applies weighted averages to past observations.
-		• Effectiveness: Effective for time-series data with trends and seasonality, adapts to changing patterns, but may not detect abrupt changes well.
-	4. Autoencoder
-	• Autoencoder: Defined by create_autoencoder and used in detect_anomalies_autoencoder.
-	• Description: A neural network that compresses and reconstructs input data, minimizing reconstruction error.
-	• Effectiveness: Excellent for high-dimensional data, effectively identifies anomalies through higher reconstruction errors compared to normal data.
-
-3.	Visualization
-	• The plot_data function visualizes the data stream and highlights detected anomalies.
-	• Used libraries like matplotlib or Plotly to create real-time plots for data streams and anomalies.
 	
-4.	Main Function:
-	• It initializes a continuous data stream and applies the selected anomaly detection method.
-	• The script continuously updates the plot with real-time data.
+	1.	Data Generation: The generate_data_stream function simulates a data stream with a trend, seasonality, and noise.
 
-5.	Optimization:
-	• Implement batch processing for model fitting.
-	• Use parallel processing for faster computation where applicable.
-	• Minimize data copying and ensure efficient memory usage.
-	• The Isolation Forest and Autoencoder models are fitted in batch mode, and parallel processing is utilized where applicable (e.g., n_jobs=-1).
-	• The script employs efficient memory management by working with NumPy arrays.
-
-6. Additional Considerations:
-	•	Parameter Tuning: Adjusted the parameters of each algorithm (e.g., contamination for Isolation Forest, threshold for Z-Score) based on the specific characteristics of your data.
-	•	Model Complexity: The Autoencoder architecture can be adjusted (more layers or different activation functions) to suit the complexity of the data.
-
+	2.	Anomaly Detection Algorithms:
+		1. Isolation Forest
+			• Implemented in detect_anomalies_isolation_forest.
+			• Description: An ensemble algorithm that isolates anomalies by creating decision trees.
+			• Effectiveness: Efficient and effective for large datasets, adapts to varying data distributions, and handles both categorical and continuous features well.
+		2. Z-Score
+			• Z-Score: Implemented in detect_anomalies_z_score.
+			• Description: A statistical method that measures how many standard deviations a data point is from the mean.
+			• Effectiveness: Simple and fast for identifying outliers in normally distributed data; may struggle with skewed distributions.
+		3. Exponential Smoothing
+			• Exponential Smoothing: Implemented in detect_anomalies_exponential_smoothing.
+			• Description: A forecasting method that applies weighted averages to past observations.
+			• Effectiveness: Effective for time-series data with trends and seasonality, adapts to changing patterns, but may not detect abrupt changes well.
+		4. Autoencoder
+		• Autoencoder: Defined by create_autoencoder and used in detect_anomalies_autoencoder.
+		• Description: A neural network that compresses and reconstructs input data, minimizing reconstruction error.
+		• Effectiveness: Excellent for high-dimensional data, effectively identifies anomalies through higher reconstruction errors compared to normal data.
+	
+	3.	Visualization
+		• The plot_data function visualizes the data stream and highlights detected anomalies.
+		• Used libraries like matplotlib or Plotly to create real-time plots for data streams and anomalies.
+		
+	4.	Main Function:
+		• It initializes a continuous data stream and applies the selected anomaly detection method.
+		• The script continuously updates the plot with real-time data.
+	
+	5.	Optimization:
+		• Implement batch processing for model fitting.
+		• Use parallel processing for faster computation where applicable.
+		• Minimize data copying and ensure efficient memory usage.
+		• The Isolation Forest and Autoencoder models are fitted in batch mode, and parallel processing is utilized where applicable (e.g., n_jobs=-1).
+		• The script employs efficient memory management by working with NumPy arrays.
+	
+	6. Additional Considerations:
+		•	Parameter Tuning: Adjusted the parameters of each algorithm (e.g., contamination for Isolation Forest, threshold for Z-Score) based on the specific characteristics of your data.
+		•	Model Complexity: The Autoencoder architecture can be adjusted (more layers or different activation functions) to suit the complexity of the data.
+	
 
 ## Getting Started
 
