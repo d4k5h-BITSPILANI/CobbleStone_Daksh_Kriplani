@@ -14,8 +14,6 @@ Make sure you have Python 3.6 or higher installed on your system. You can downlo
 2. **Navigate to your project directory:**
    ```bash
    cd path/to/your/project
-
-   	
 3.	Create a virtual environment:
    	```bash
 	•	For Windows:python -m venv venv
