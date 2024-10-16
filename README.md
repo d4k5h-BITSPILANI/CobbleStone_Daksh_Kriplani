@@ -1,4 +1,4 @@
-# Efficient Data Stream Anomaly Detection
+# Anomaly Detection from Continuous Data Stream
 
 This project demonstrates various anomaly detection algorithms applied to a data stream. 
 
