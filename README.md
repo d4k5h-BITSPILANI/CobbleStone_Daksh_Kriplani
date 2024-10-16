@@ -14,14 +14,19 @@ Make sure you have Python 3.6 or higher installed on your system. You can downlo
 2. **Navigate to your project directory:**
    ```bash
    cd path/to/your/project
+
+   	
 3.	Create a virtual environment:
+   	```bash
 	•	For Windows:python -m venv venv
 	•	For macOS/Linux:python3 -m venv venv
-4.	Activate the virtual environment:
+5.	Activate the virtual environment:
+	```bash
 	•	For Windows:venv\Scripts\activate
 	•	For macOS/Linux:source venv/bin/activate
 
 Installing Requirements
+	
 	With the virtual environment activated, install the required packages by running:
 		pip install -r requirements.txt
 	
