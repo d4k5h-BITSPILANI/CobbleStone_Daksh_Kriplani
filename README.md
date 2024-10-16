@@ -40,6 +40,8 @@ After running the script, various anomaly detection methods will be applied to t
 	•	Exponential Smoothing
 	•	Isolation Forest
 	•	Autoencoder
+	### Results
+	(results.png)
 
 Each plot will display the data stream and highlight detected anomalies in red.
 
