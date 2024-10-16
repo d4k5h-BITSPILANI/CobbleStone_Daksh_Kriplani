@@ -2,7 +2,7 @@
 
 This project demonstrates various anomaly detection algorithms applied to a data stream. 
 	
-	##Data Generation: The generate_data_stream function simulates a data stream with a trend, seasonality, and noise.
+	1.	Data Generation: The generate_data_stream function simulates a data stream with a trend, seasonality, and noise.
 
 	2.	Anomaly Detection Algorithms:
 		1. Isolation Forest
@@ -10,18 +10,18 @@ This project demonstrates various anomaly detection algorithms applied to a data
 			• Description: An ensemble algorithm that isolates anomalies by creating decision trees.
 			• Effectiveness: Efficient and effective for large datasets, adapts to varying data distributions, and handles both categorical and continuous features well.
 		2. Z-Score
-			• Z-Score: Implemented in detect_anomalies_z_score.
-			• Description: A statistical method that measures how many standard deviations a data point is from the mean.
+			• Implemented in detect_anomalies_z_score.
+			• A statistical method that measures how many standard deviations a data point is from the mean.
 			• Effectiveness: Simple and fast for identifying outliers in normally distributed data; may struggle with skewed distributions.
 		3. Exponential Smoothing
-			• Exponential Smoothing: Implemented in detect_anomalies_exponential_smoothing.
-			• Description: A forecasting method that applies weighted averages to past observations.
+			• Implemented in detect_anomalies_exponential_smoothing.
+			• A forecasting method that applies weighted averages to past observations.
 			• Effectiveness: Effective for time-series data with trends and seasonality, adapts to changing patterns, but may not detect abrupt changes well.
 		4. Autoencoder
-		• Autoencoder: Defined by create_autoencoder and used in detect_anomalies_autoencoder.
-		• Description: A neural network that compresses and reconstructs input data, minimizing reconstruction error.
-		• Effectiveness: Excellent for high-dimensional data, effectively identifies anomalies through higher reconstruction errors compared to normal data.
-	
+			• Defined by create_autoencoder and used in detect_anomalies_autoencoder.
+			• A neural network that compresses and reconstructs input data, minimizing reconstruction error.
+			• Effectiveness: Excellent for high-dimensional data, effectively identifies anomalies through higher reconstruction errors compared to normal data.
+		
 	3.	Visualization
 		• The plot_data function visualizes the data stream and highlights detected anomalies.
 		• Used libraries like matplotlib or Plotly to create real-time plots for data streams and anomalies.
