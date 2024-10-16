@@ -1,9 +1,8 @@
 # Anomaly Detection from Continuous Data Stream
 
 This project demonstrates various anomaly detection algorithms applied to a data stream. 
-# Anomaly Detection from Continuous Data Stream
 	
-	1.	Data Generation: The generate_data_stream function simulates a data stream with a trend, seasonality, and noise.
+	##Data Generation: The generate_data_stream function simulates a data stream with a trend, seasonality, and noise.
 
 	2.	Anomaly Detection Algorithms:
 		1. Isolation Forest
